@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+  }
+  
+  #loginForm{
+    width: 25%;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  
+  #signUpForm{
+    width: 25%;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  
+  #loginsignuph1{
+    text-align: center;
+    margin-top: 5%;
+  }
