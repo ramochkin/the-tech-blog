@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Comment } = require('../../models');
+const { Comments } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // create route at (/) that is login protected
 router.post('/', withAuth, async (req, res) => {
   try {
-    const newComment = await Comment.create({
+    const newComment = await Comments.create({
       ...req.body,
       user_id: req.session.user_id,
     });

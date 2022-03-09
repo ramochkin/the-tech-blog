@@ -4,8 +4,9 @@ const commenthandler=  async function(event){
     const post_id = document.querySelector('input[name="post-id"]').value;
     const comment_content =  document.querySelector('textarea[name="comment-body"]').value;
 
+
     if (comment_content){
-        await fetch('/api/comment', {
+        await fetch('/api/comments', {
             method: 'POST',
             body: JSON.stringify({
                 post_id,

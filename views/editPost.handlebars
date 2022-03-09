@@ -6,10 +6,10 @@
         <input type="hidden" id="post-id" name="post-id" value="{{post.id}}" />
 
         <label class="form-label" for="post-body">Rename here</label>
-        <input name="post-body" class="form-input" value="post_title">
+        <input id='postTitle' name="post-body" class="form-input" value="{{post.post_title}}">
         
         <label class="form-label" for="post-body">Content</label>
-        <textarea name="post-body" class="form-input">{{post.content}}</textarea>
+        <textarea id='textInput' name="post-body" class="form-input">{{post.content}}</textarea>
 
         
         <button type="submit" class="update-btn">Update</button>
